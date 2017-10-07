@@ -13,7 +13,7 @@ class AlbumList extends React.Component {
   }
 
   renderAlbums() {
-    this.state.albums.map(album => (
+    return this.state.albums.map(album => (
       <AlbumDetail key={album.title} album={album} />
     ));
   }
